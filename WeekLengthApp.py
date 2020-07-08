@@ -65,7 +65,7 @@ class Window:
         + test_success_metric*(1-test_success_metric)
         n = variance_conversion_rate/(primary_success_metric-test_success_metric)**2*(alpha+beta)**2
 
-        n_prime = (n*(1+ratio)**2)/(4*ratio)
+        n_prime = (2*n*(1+ratio)**2)/(4*ratio)
         n_original = math.ceil(n_prime/(1+ratio))
         n_treatment = math.ceil((ratio*n_prime)/(1+ratio))
         n_total = n_original+n_treatment
