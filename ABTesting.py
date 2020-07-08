@@ -3,13 +3,13 @@ import math
 
 
 # User given parameters
-control_conversion_rate = 0.025 # Primary Success Metric
-target_change = -0.1    # Expected Change in Primary Success Metric
+control_conversion_rate = 0.1 # Primary Success Metric
+target_change = 0.2    # Expected Change in Primary Success Metric
 alpha = 0.05    # Confidence Level  Change to output a standard array. For now, 80, 85, 90, 95, 99
 beta = 0.8  # Power
 tail_count = 2  # One or Two Tailed (radio button)
-pop_ratio = 0.5   # Control:Variant Ratio   []:[] (0.5 means[2]:[1]. Because fuck me) *
-weekly_visits = 14000 # Weekly Visitors *
+pop_ratio = 1   # Control:Variant Ratio   []:[] (0.5 means[2]:[1]. Because fuck me) *
+weekly_visits = 50000 # Weekly Visitors *
 
 # Calculations
 variance_conversion_rate = control_conversion_rate * (1+target_change)
